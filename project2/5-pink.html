@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เว็บไซต์พื้นหลังเคลื่อนไหว</title>
+    <style>
+        * 
+
+        body, html {
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url(3.gif) no-repeat center center;
+            background-size: cover;
+            
+        }
+
+        @keyframes moveBackground {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.1); }
+        }
+
+        .content {
+            position: relative;
+            z-index: 10;
+            color: white;
+            text-align: center;
+            box-shadow: 0px 0px 15px rgba(239, 253, 255, 0.7);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+
+        
+
+        h1 {
+            font-size: 3rem;
+            color: #ee07a9;
+            text-shadow: 2px 2px 8px rgb(250, 10, 142);
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #4b3a3a;
+            
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #ff7ae9;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="content">
+        <h1><b>"สีชมพู"</b></h1><br>
+        <p>ไฮไลท์สีนี้<mark style="background-color:rgba(253, 0, 139, 0.842);"> เหมาะกับการเน้นคำสั้นๆ</mark>ทั่วไป<br>ชื่อคน สถานที่ หรือวันที่ต่างๆ ที่เราอยากเน้นให้สำคัญ 
+           <br>อาจจะไฮไลท์คำตอบของคำถามประเภท ใครทำอะไร ที่ไหน เมื่อไหร่
+           </p><br><br><br>
+        <a href="5.html" class="btn">Go Back
+</body>
+</html>

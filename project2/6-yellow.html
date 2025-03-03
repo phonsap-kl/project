@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เว็บไซต์พื้นหลังเคลื่อนไหว</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body, html {
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url(จานเหลือง.gif) no-repeat center center;
+            background-size: cover;
+        }
+
+
+        .content {
+            position: relative;
+            z-index: 10;
+            color: white;
+            text-align: center;
+            border-radius: 15px;
+            width: 100%;
+            height: 50;
+            padding: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+
+        h1 {
+            font-size: 3rem;
+            color: #FFCC00; /* สีเหลือง */
+            text-shadow: 2px 2px 8px rgb(255, 245, 144);
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #4b3a3a;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #FFCC00; /* สีเหลือง */
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #f1c40f;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="content">
+        <h1><b>"สีเหลือง"</b></h1><br>
+        <p>สีเหลืองสามารถกระตุ้นความรู้สึกสนุกสนานและทำให้คนรู้สึกกระปรี้กระเปร่า<br>
+           แต่สีเหลืองในภาชนะอาหารก็ช่วยกระตุ้นความหิวได้ เนื่องจากสีเหลือง<br>
+           เป็นสีที่ทำให้เกิดการกระตุ้นทางจิตใจที่เกี่ยวข้องกับความอยากอาหาร</p><br><br><br>
+        <a href="6.html" class="btn">Go Back</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เว็บไซต์พื้นหลังเคลื่อนไหว</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;font-family:'Arial',sans-serif}
+        body,html{height:100%;overflow:hidden;display:flex;justify-content:center;align-items:center}
+        .background{position:absolute;top:0;left:0;width:100%;height:100%;background:url('สีส้ม.png') no-repeat center center;background-size:cover}
+        @keyframes moveBackground{0%{transform:scale(1)}100%{transform:scale(1.1)}}
+        .content{position:relative;z-index:10;color:rgb(255,192,133);text-align:center;border-radius:15px;width:100%;padding:20px;animation:fadeIn 2s ease-in-out}
+        @keyframes fadeIn{0%{opacity:0;transform:translateY(-20px)}100%{opacity:1;transform:translateY(0)}}
+        h1{font-size:3rem;color:#ff7700;text-shadow:2px 2px 8px rgb(255,219,165);animation:blinkEffect 1s infinite}
+        @keyframes blinkEffect{0%,100%{opacity:1}50%{opacity:0.5}}
+        p{font-size:1.2rem;line-height:1.8;color:#001804;text-shadow:1px 1px 5px rgb(255,226,185)}
+        .btn{display:inline-block;margin-top:20px;padding:10px 20px;background:#744200;color:rgb(255,145,82);text-decoration:none;font-size:1.2rem;border-radius:10px;box-shadow:0px 5px 10px rgb(255,162,0);transition:0.3s}
+        .btn:hover{background:#ffd0a9;box-shadow:0px 5px 15px rgba(171,134,0,0.8)}
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="content">
+        <h1>คนที่ชอบ <b>"สีส้ม"</b></h1><br>
+        <p>คนที่ชอบสีส้มเป็นคนรักเพื่อน รักความเป็นธรรมชาติ มีความคิดสร้างสรรค์ <br>แหวกแนว มุ่งมั่นและทะเยอทะยาน <br>และยังเป็นคนเปิดเผย จริงใจ</p><br><br><br>
+        <a href="4.html" class="btn">Go Back</a>
+    </div>
+</body>
+</html>
